@@ -486,7 +486,7 @@ if __name__ == '__main__':
     scheduler.start()
 
     app.secret_key = os.urandom(12)
-    app.run(host='0.0.0.0')
+    #app.run(host='0.0.0.0')
 
     # Uncomment to enable HTTPS/SSL and comment out the line above
-    #app.run(host='0.0.0.0',port=443,ssl_context=context)
+    app.run(host='0.0.0.0',port=443,ssl_context=context)
